@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع القمة - قطع غيار السيارات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #e74c3c;
+            --dark-color: #1a1a1a;
+            --price-color: #27ae60;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', sans-serif; }
+        body { background-color: #f4f4f4; color: #333; }
+        header { background-color: var(--dark-color); color: var(--white); padding: 30px; text-align: center; border-bottom: 5px solid var(--primary-color); }
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; }
+        .section-title { background: var(--dark-color); color: white; padding: 10px 25px; margin: 40px 0 20px; border-right: 8px solid var(--primary-color); display: inline-block; }
+        .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .tool-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+        .tool-card:hover { transform: translateY(-10px); }
+        .product-img { width: 100%; height: 170px; object-fit: cover; }
+        .tool-header { background: var(--primary-color); color: white; padding: 12px; text-align: center; font-weight: bold; }
+        .brand-list { list-style: none; padding: 15px; }
+        .brand-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #eee; }
+        .brand-name { font-weight: bold; color: var(--dark-color); }
+        .price-tag { color: var(--price-color); font-weight: bold; }
+        footer { text-align: center; padding: 40px; background: var(--dark-color); color: white; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>موقع القمة لأدوات السيارات</h1>
+</header>
+
+<div class="container">
+
+    <h2 class="section-title">قسم الوارد الأمريكي (American Specs)</h2>
+    
+    <div class="category-grid">
+        <div class="tool-card">
+            <img src="https://images.unsplash.com/photo-1635773054018-22c6080df731?auto=format&fit=crop&w=400&q=80" class="product-img">
+            <div class="tool-header">أولاً: بلكات (Spark Plugs)</div>
+            <ul class="brand-list">
+                <li class="brand-item"><span class="brand-name">Chevrolet</span> <span class="price-tag">45,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">Cadillac</span> <span class="price-tag">65,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">GMC</span> <span class="price-tag">50,000 د.ع</span></li>
+            </ul>
+        </div>
+
+        <div class="tool-card">
+            <img src="https://images.unsplash.com/photo-1486006396193-c7a33a171600?auto=format&fit=crop&w=400&q=80" class="product-img">
+            <div class="tool-header">ثانياً: نوزلات (Fuel Injectors)</div>
+            <ul class="brand-list">
+                <li class="brand-item"><span class="brand-name">Chevrolet</span> <span class="price-tag">120,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">Cadillac</span> <span class="price-tag">180,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">GMC</span> <span class="price-tag">135,000 د.ع</span></li>
+            </ul>
+        </div>
+
+        <div class="tool-card">
+            <img src="https://images.unsplash.com/photo-1621360341398-466d62688863?auto=format&fit=crop&w=400&q=80" class="product-img">
+            <div class="tool-header">ثالثاً: مجاول (Ignition Coils)</div>
+            <ul class="brand-list">
+                <li class="brand-item"><span class="brand-name">Chevrolet</span> <span class="price-tag">90,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">Cadillac</span> <span class="price-tag">115,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">GMC</span> <span class="price-tag">95,000 د.ع</span></li>
+            </ul>
+        </div>
+
+        <div class="tool-card">
+            <img src="https://images.unsplash.com/photo-1635773054018-22c6080df731?auto=format&fit=crop&w=400&q=80" class="product-img">
+            <div class="tool-header">رابعاً: بلكات (Spark Plugs)</div>
+            <ul class="brand-list">
+                <li class="brand-item"><span class="brand-name">Dodge</span> <span class="price-tag">40,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">Ford</span> <span class="price-tag">35,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">Chrysler</span> <span class="price-tag">45,000 د.ع</span></li>
+            </ul>
+        </div>
+
+        <div class="tool-card">
+            <img src="https://images.unsplash.com/photo-1486006396193-c7a33a171600?auto=format&fit=crop&w=400&q=80" class="product-img">
+            <div class="tool-header">خامساً: نوزلات (Fuel Injectors)</div>
+            <ul class="brand-list">
+                <li class="brand-item"><span class="brand-name">Dodge</span> <span class="price-tag">110,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">Ford</span> <span class="price-tag">105,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">Chrysler</span> <span class="price-tag">115,000 د.ع</span></li>
+            </ul>
+        </div>
+
+        <div class="tool-card">
+            <img src="https://images.unsplash.com/photo-1621360341398-466d62688863?auto=format&fit=crop&w=400&q=80" class="product-img">
+            <div class="tool-header">سادساً: مجاول (Ignition Coils)</div>
+            <ul class="brand-list">
+                <li class="brand-item"><span class="brand-name">Dodge</span> <span class="price-tag">85,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">Ford</span> <span class="price-tag">80,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">Chrysler</span> <span class="price-tag">90,000 د.ع</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-title">قسم الوارد الخليجي (GCC Specs)</h2>
+    
+    <div class="category-grid">
+        <div class="tool-card">
+            <img src="https://images.unsplash.com/photo-1638843516428-2c2642597400?auto=format&fit=crop&w=400&q=80" class="product-img">
+            <div class="tool-header">أولاً: بلكات (Spark Plugs)</div>
+            <ul class="brand-list">
+                <li class="brand-item"><span class="brand-name">Kia</span> <span class="price-tag">25,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">Hyundai</span> <span class="price-tag">25,000 د.ع</span></li>
+            </ul>
+        </div>
+
+        <div class="tool-card">
+            <img src="https://images.unsplash.com/photo-1517030330234-94c4fa948ebc?auto=format&fit=crop&w=400&q=80" class="product-img">
+            <div class="tool-header">ثانياً: نوزلات (Fuel Injectors)</div>
+            <ul class="brand-list">
+                <li class="brand-item"><span class="brand-name">Kia</span> <span class="price-tag">95,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">Hyundai</span> <span class="price-tag">95,000 د.ع</span></li>
+            </ul>
+        </div>
+
+        <div class="tool-card">
+            <img src="https://images.unsplash.com/photo-1621360341398-466d62688863?auto=format&fit=crop&w=400&q=80" class="product-img">
+            <div class="tool-header">ثالثاً: مجاول (Ignition Coils)</div>
+            <ul class="brand-list">
+                <li class="brand-item"><span class="brand-name">Kia</span> <span class="price-tag">60,000 د.ع</span></li>
+                <li class="brand-item"><span class="brand-name">Hyundai</span> <span class="price-tag">60,000 د.ع</span></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 موقع القمة - جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
